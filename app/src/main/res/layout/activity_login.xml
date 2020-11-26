@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+    </LinearLayout>
+
+<!--    상단로고-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/lottemartdream_bold"
+            android:text="모임을 더 편하고 즐겁게"
+            android:textColor="@color/mainColor"
+            android:textSize="20dp"
+            ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/lottemartdream_bold"
+            android:text="팀프앙"
+            android:textColor="@color/mainColor"
+            android:textSize="50dp"
+            ></TextView>
+    </LinearLayout>
+
+<!--    입력창-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/lightgray"
+            android:hint="   이메일 주소 또는 아이디"
+            android:textSize="17dp"
+            android:textColorHint="@color/lightgray"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/lightgray"
+            android:hint="   비밀번호"
+            android:textSize="17dp"
+            android:inputType="textPassword"
+            android:textColorHint="@color/lightgray"></EditText>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/bin_blue"
+            android:text="로그인"
+            android:textSize="20dp"
+            android:fontFamily="@font/nanumsquare_aceb"
+            android:textColor="#ffffff"></Button>
+    </LinearLayout>
+
+
+<!--아이디찾기 비밀번호찾기 회원가입-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:text="아이디 찾기 "
+            android:textColor="@color/lightgray"
+            android:layout_marginLeft="50dp"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/lightgray"
+            android:text="|"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:text="비밀번호 찾기 "
+            android:textColor="@color/lightgray"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="|"
+            android:textColor="@color/lightgray"
+            ></TextView>
+        <TextView
+            android:id="@+id/goToJoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:text="회원가입"
+            android:textColor="@color/lightgray"
+            android:layout_marginRight="50dp"
+            ></TextView>
+    </LinearLayout>
+
+
+<!--    또는 다른 서비스 계정으로 로그인-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:src="@drawable/line"
+            android:layout_gravity="center"
+            >
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="   또는 다른 서비스 계정으로 로그인   "
+            android:textColor="@color/lightgray">
+        </TextView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:src="@drawable/line"
+            android:layout_gravity="center"
+            >
+        </ImageView>
+    </LinearLayout>
+
+<!--    다른 계정 로그인-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/kakao"></ImageView>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/naver"></ImageView>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/google"></ImageView>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/facebook"></ImageView>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/apple"></ImageView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+    </LinearLayout>
+</LinearLayout>
